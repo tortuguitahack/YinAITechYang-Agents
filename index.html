@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISTEMA CAPA 7 | LIQUIDACIÓN FINAL - IA ITS CRAZY</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #020617; --primary: #6366f1; --success: #10b981; --danger: #ef4444; --gold: #f59e0b;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: #f8fafc; overflow-x: hidden; }
+        
+        .alert-banner { background: var(--danger); text-align: center; padding: 12px; font-weight: 900; font-size: 1rem; position: sticky; top: 0; z-index: 100; animation: pulse 2s infinite; }
+        @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.7; } 100% { opacity: 1; } }
+
+        header { padding: 3rem 1rem; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .logo { font-family: 'Orbitron', sans-serif; font-size: 2.5rem; background: linear-gradient(90deg, var(--primary), var(--success)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; }
+
+        .card { background: rgba(30, 41, 59, 0.5); border: 1px solid rgba(255,255,255,0.1); border-radius: 15px; padding: 2rem; transition: 0.3s; position: relative; display: flex; flex-direction: column; }
+        .card:hover { border-color: var(--primary); transform: translateY(-5px); box-shadow: 0 10px 30px rgba(99, 102, 241, 0.2); }
+        
+        .badge { position: absolute; top: 1rem; right: 1rem; font-size: 0.7rem; font-weight: 900; padding: 5px 10px; border-radius: 5px; background: var(--primary); }
+        
+        h3 { margin-bottom: 1rem; font-family: 'Orbitron', sans-serif; font-size: 1.1rem; }
+        p { color: #94a3b8; font-size: 0.9rem; margin-bottom: 1.5rem; flex-grow: 1; }
+
+        .price-section { margin-bottom: 1.5rem; }
+        .current-price { font-size: 2.2rem; font-weight: 900; color: var(--success); }
+        .old-price { text-decoration: line-through; color: #64748b; font-size: 1rem; margin-left: 10px; }
+
+        .btn-buy { background: var(--primary); color: white; text-align: center; padding: 1rem; text-decoration: none; border-radius: 8px; font-weight: 800; transition: 0.3s; text-transform: uppercase; }
+        .btn-buy:hover { background: var(--success); letter-spacing: 1px; }
+
+        .payment-footer { margin-top: 4rem; padding: 3rem; background: rgba(15, 23, 42, 0.8); border-radius: 20px; text-align: center; border: 1px solid var(--success); }
+        .payment-icons { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-top: 1rem; opacity: 0.8; }
+    </style>
+</head>
+<body>
+
+<div class="alert-banner">⚠️ ÚLTIMA HORA: EL CONSORCIO CIERRA EN 45 MINUTOS. TODO DEBE SER VENDIDO.</div>
+
+<header>
+    <div class="logo">CAPA 7 // ECOSYSTEM</div>
+    <p style="margin-top: 10px; color: var(--gold);">IA OPORTUNITY</p>
+</header>
+
+<main class="container">
+    <div class="grid">
+        
+        <div class="card">
+            <span class="badge">ENTRY</span>
+            <h3>Agente Individual IA</h3>
+            <p>1 Experto dedicado a ejecución de scripts y automatización de marketing.</p>
+            <div class="price-section">
+                <span class="current-price">$3.33</span>
+                <span class="old-price">$19</span>
+            </div>
+            <a href="https://buy.stripe.com/tu_link_333" class="btn-buy">Comprar Acceso</a>
+        </div>
+
+        <div class="card" style="border: 2px solid var(--gold);">
+            <span class="badge" style="background: var(--gold); color: black;">RECOMENDADO</span>
+            <h3>Pack 1,000 Expertos</h3>
+            <p>Acceso total a la Mente Colmena. Procesamiento masivo de datos y ventas.</p>
+            <div class="price-section">
+                <span class="current-price">$7.77</span>
+                <span class="old-price">$97</span>
+            </div>
+            <a href="https://buy.stripe.com/tu_link_777" class="btn-buy" style="background: var(--gold); color: black;">Adquirir Todo</a>
+        </div>
+
+        <div class="card">
+            <span class="badge">SaaS</span>
+            <h3>UntitledNexus V3.0</h3>
+            <p>La infraestructura completa de gestión de negocios digitales en piloto automático.</p>
+            <div class="price-section">
+                <span class="current-price">$19.99</span>
+                <span class="old-price">$149</span>
+            </div>
+            <a href="https://buy.stripe.com/tu_link_1999" class="btn-buy">Obtener SaaS</a>
+        </div>
+
+        <div class="card" style="background: linear-gradient(145deg, #020617, #1e1b4b);">
+            <span class="badge" style="background: var(--success);">FULL ACCESS</span>
+            <h3>Alpha Source Code</h3>
+            <p>Descarga el código fuente de Capa 7 y todos los flujos n8n. Propiedad total.</p>
+            <div class="price-section">
+                <span class="current-price">$197</span>
+                <span class="old-price">$2,500</span>
+            </div>
+            <a href="https://buy.stripe.com/tu_link_197" class="btn-buy" style="background: white; color: black;">Comprar Código</a>
+        </div>
+
+    </div>
+
+    <div class="payment-footer">
+        <h3>PASARELA DE PAGO VERIFICADA</h3>
+        <p>Pagos procesados de forma segura para <strong>Diego Edgardo Cortez Yanez</strong></p>
+        <div class="payment-icons">
+            <span>💳 VISA / MASTERCARD</span>
+            <span>🏦 WALLBIT / BANK</span>
+            <span>₿ CRYPTO (USDT/BTC)</span>
+        </div>
+        <p style="font-size: 0.7rem; margin-top: 2rem; color: #64748b;">ID DE TRANSACCIÓN: ROOT-SECURE-219449048779</p>
+    </div>
+</main>
+
+</body>
+</html>
